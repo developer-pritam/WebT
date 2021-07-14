@@ -1,0 +1,148 @@
+/*Global Styles*/
+:root{
+	--primary-color:#e50914;
+	--dark-color: #141414;
+	--light-color: #f4f4f4;
+}
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0
+}
+
+body{
+	font-family: 'Arial', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	background: #000;
+	color: #999;
+}
+
+ul{list-style: none;}
+img{width: 100%}
+a{text-decoration: none; color: #FFFFFF;
+margin-left: 20px;}
+h1, h2, h3, h4{color: #FFFFFF;}
+p{margin: 0.5rem 0}
+
+
+/***************************/
+/***       Button       ***/
+/**************************/
+.btn{
+	display: inline-block;
+	background: var(--primary-color);
+	border: none;
+	border-radius: 2px;
+	color: #FFFFFF;
+	padding: 0.4rem 1.3rem;
+	font-size: 16px;
+	text-align: center;
+	outline: none;
+	cursor: pointer;
+	margin-right: 0.4rem;
+	transition: opacity 0.2s ease-in;
+	box-shadow: rgba(0,0,0,0.45);
+}
+footer{
+	display: flex;
+
+align-items: center;
+justify-content: center;
+}
+
+.btn:hover{
+	opacity: 0.9;
+}
+.btn-rounded {
+	border-radius: 5px;
+}
+.btn-xl {
+	font-size: 2rem;
+	padding: 1.5rem 2.1rem;
+	text-transform: uppercase;
+}
+.btn-lg {
+	font-size: 1rem;
+	padding: 0.8rem 1.3rem;
+	text-transform: uppercase;
+}
+.btn-icon {
+	margin-left: 1rem;
+}
+
+
+
+
+/***************************/
+/***      Showcase      ***/
+/**************************/
+#showcase{
+	height: 91vh;
+	width: 100%;
+	position: relative;
+	background: url('../images/background.jpg') no-repeat center center/cover;
+}
+
+#showcase::after{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.6);
+	z-index: 1;
+	box-shadow: inset 130px 110px 250px #000000, inset -130px -110px 260px #000000;
+}
+
+#showcase .showcase-top{
+	position: relative;
+	height: 90px;
+	z-index: 2;
+}
+
+#showcase .showcase-top img{
+	width: 160px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: 0;
+	transform: translate(-50%, -50%);
+}
+
+#showcase .showcase-top a{
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(-50%, -50%);
+}
+
+#showcase .showcase-content{
+	position: relative;
+	z-index: 2;
+	width: 65%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 9rem;
+}
+
+#showcase .showcase-content h1{
+	font-size: 5.2rem;
+	font-weight: 700px;
+	line-height: 1.1;
+	margin: 0 0 2rem;
+}
+
+#showcase .showcase-content p{
+	font-size: 1.9rem;
+	font-weight: 400;
+	line-height: 1.25;
+	margin:0 0 2rem;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
